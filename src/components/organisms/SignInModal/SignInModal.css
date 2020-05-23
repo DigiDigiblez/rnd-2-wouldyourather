@@ -1,0 +1,62 @@
+.sign-in-modal {
+    border: solid 1px #999999;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 450px;
+    min-height: 100px;
+    margin: 20px;
+}
+
+.sign-in-modal__header {
+    border-bottom: solid 1px #999999;
+    width: 100%;
+    background-color: #99999930;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.sign-in-modal__header > h1 {
+    margin: 10px;
+}
+
+.sign-in-modal__content {
+    margin: 30px;
+}
+
+.sign-in-modal__content-btns {
+    display: flex;
+    width: 100%;
+}
+
+.sign-in-modal__content-image {
+    margin: 20px;
+    align-self: center;
+}
+
+.sign-in-modal__content-image > img {
+    height: 100px;
+}
+
+.sign-in-modal__content-details {
+}
+
+.sign-in-modal__content-details > h2 {
+    margin: 10px 0;
+}
+
+.sign-in-modal__content-btns button:first-child {
+    border-top-left-radius: 10px;
+    width: 200px;
+}
+
+.sign-in-modal__content-btns button:last-child {
+    border-top-right-radius: 10px;
+    width: 200px;
+}
+
+#user-select {
+    font-size: 24px;
+    height: 44px;
+}

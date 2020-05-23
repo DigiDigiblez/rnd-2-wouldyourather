@@ -10,13 +10,14 @@ import { ROUTES } from "./route";
 import Home from "../Home";
 import NewQuestion from "../NewQuestion";
 import Leaderboard from "../Leaderboard";
+import SignIn from "../SignIn";
 
 const Routes = () => (
   <Switch>
     <PublicRoute exact path={ROUTES.HOME} component={Home} />
     <PublicRoute exact path={ROUTES.NEW_QUESTION} component={NewQuestion} />
     <PublicRoute exact path={ROUTES.LEADER_BOARD} component={Leaderboard} />
-    <PublicRoute exact path={ROUTES.LOGOUT} component={Home} />
+    <PublicRoute exact path={ROUTES.SIGN_IN} component={SignIn} />
     <PublicRoute exact path={ROUTES.LIST} component={List} />
     <PublicRoute exact path={ROUTES.LIST} component={List} />
     <PublicRoute exact path={ROUTES.SEARCH} component={Search} />

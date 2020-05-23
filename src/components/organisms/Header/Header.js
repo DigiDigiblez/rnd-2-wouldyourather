@@ -5,7 +5,7 @@ import React from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import { ReactComponent as Hamburger } from "../../../icons/hamburger.svg";
 import { ReactComponent as Inbox } from "../../../icons/inbox.svg";
-import { ReactComponent as Logo } from "../../../icons/logo.svg";
+import { ReactComponent as Logo } from "../../../icons/logo_full.svg";
 import { ROUTES } from "../../pages/Routes/route";
 
 const Header = () => {
@@ -44,11 +44,11 @@ const Header = () => {
         </NavLink>
         <span className={`${baseclass}__username`}>Carl Bowen</span>
         <NavLink
-          to={ROUTES.LOGOUT}
+          to={ROUTES.SIGN_IN}
           className={`${baseclass}__navlinks-link ${currentRoute ===
-            ROUTES.LOGOUT && "active-link"}`}
+            ROUTES.SIGN_IN && "active-link"}`}
         >
-          Logout
+          Sign In
         </NavLink>
       </div>
 
