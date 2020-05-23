@@ -2,7 +2,6 @@ import "./QuestionGroup.css";
 
 import React, { useState } from "react";
 import Container from "../../atoms/Container";
-import Separator from "../../atoms/Separator/Separator";
 import Question from "../../molecules/Question/Question";
 
 const QuestionGroup = () => {
@@ -22,21 +21,15 @@ const QuestionGroup = () => {
           Unanswered Questions
         </button>
         <button
-          className={`secondary_cta ${plansCategory === "Answered Question" &&
+          className={`secondary_cta ${plansCategory === "Answered Leader" &&
             "active-button"}`}
-          value="Answered Question"
-          onClick={() => setPlansCategory("Answered Question")}
+          value="Answered Leader"
+          onClick={() => setPlansCategory("Answered Leader")}
         >
-          Answered Question
+          Answered Leader
         </button>
       </span>
-      {plansCategory === "Unanswered Questions" ? (
-        <section>
-          <Question />
-        </section>
-      ) : (
-        <span>Set B</span>
-      )}
+      {plansCategory === "Unanswered Questions" ? <Question /> : <Question />}
     </Container>
   );
 };

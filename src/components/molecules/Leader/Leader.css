@@ -1,0 +1,112 @@
+.leader {
+    border: solid 1px #99999950;
+    border-radius: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    min-height: 100px;
+    margin: 20px;
+}
+
+.leader__content {
+    margin: 30px;
+    display: flex;
+    position: relative;
+}
+
+.leader__content-trophy-holder {
+    align-self: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    font-size: 20px;
+    height: 60px;
+    transform: rotate(135deg);
+    margin: -46px -50px;
+    opacity: 0.3;
+}
+
+.leader__content-trophy {
+    align-self: center;
+    position: absolute;
+    left: -30px;
+    top: -27px;
+    color: white;
+    font-size: 20px;
+    height: 25px;
+}
+
+.leader__content-btns {
+    display: flex;
+    width: 100%;
+}
+
+.leader__content-image {
+    margin: 20px;
+    align-self: center;
+}
+
+.leader__content-separator {
+    margin: -10px 10px;
+    background-color: #99999930;
+}
+
+.leader__content-details {
+    width: 200px;
+    margin: 20px;
+}
+
+.leader__content-details-answered,
+.leader__content-details-created {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leader__content-details-answered > span:last-child,
+.leader__content-details-created > span:last-child {
+    font-weight: bold;
+}
+
+.leader__content-score {
+    align-self: center;
+    position: relative;
+    border: solid 1px #999999;
+    border-radius: 10px;
+}
+
+.leader__content-score-header {
+    border-bottom: solid 1px #999999;
+    width: 100%;
+    text-align: center;
+    background-color: #99999930;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.leader__content-score-val {
+    align-self: center;
+    position: relative;
+    margin: 20px;
+    display: flex;
+}
+
+.leader__content-score-value {
+    align-self: center;
+    position: absolute;
+    left: 20px;
+    top: 11px;
+    color: white;
+    font-size: 20px;
+}
+
+.leader__content-btns button:first-child {
+    border-top-left-radius: 10px;
+    width: 200px;
+}
+
+.leader__content-btns button:last-child {
+    border-top-right-radius: 10px;
+    width: 200px;
+}

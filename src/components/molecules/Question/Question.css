@@ -1,18 +1,23 @@
 .question {
-    border: solid 1px #333333;
+    border: solid 1px #999999;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 300px;
+    width: 450px;
     min-height: 100px;
     margin: 20px;
 }
 
 .question__header {
-    border-bottom: solid 1px #333333;
+    border-bottom: solid 1px #999999;
     width: 100%;
-    text-align: center;
+    background-color: #99999930;
+    padding: 0 20px;
+}
+
+.question__header > h1 {
+    margin: 10px;
 }
 
 .question__content {
@@ -26,16 +31,21 @@
 }
 
 .question__content-image {
-    margin: 20px
+    margin: 20px 20px 20px 0;
+    align-self: center;
 }
 
 .question__content-separator {
-    margin: 20px;
+    margin: -10px 10px;
     background-color: #999999
 }
 
 .question__content-details {
-    margin: 20px
+    margin-left: 20px
+}
+
+.question__content-details > h2 {
+    margin: 10px 0;
 }
 
 .question__content-btns button:first-child {

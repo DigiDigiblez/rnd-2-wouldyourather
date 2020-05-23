@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85fd7484-4095-4b20-aa78-d383c97d8391" name="Default Changelist" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/components/atoms/Separator/Separator.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/atoms/Separator/Separator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/Question/Question.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/Question/Question.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/QuestionBuilder/QuestionBuilder.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/QuestionBuilder/QuestionBuilder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/QuestionGroup/QuestionGroup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/QuestionGroup/QuestionGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/Home/Home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/Home/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/Home/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/NewQuestion/NewQuestion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/NewQuestion/NewQuestion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/NewQuestion/index.js" afterDir="false" />
+    <list default="true" id="85fd7484-4095-4b20-aa78-d383c97d8391" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/molecules/Leader/Leader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecules/Leader/Leader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Leaderboard/Leaderboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Leaderboard/Leaderboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Leaderboard/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/1st-place.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/2nd-place.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/3rd-place.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/lionel-lion.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/score-holder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/trophy-holder.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/Question/Question.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Question/Question.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/Question/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Question/Question.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/QuestionBuilder/QuestionBuilder.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/QuestionBuilder/QuestionBuilder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/QuestionGroup/QuestionGroup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/QuestionGroup/QuestionGroup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/QuestionGroup/QuestionGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/QuestionGroup/QuestionGroup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Routes/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Routes/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Routes/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/molecules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/icons" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -60,16 +54,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/molecules" />
+      <recent name="$PROJECT_DIR$/src/icons" />
       <recent name="$PROJECT_DIR$/src/components/pages" />
+      <recent name="$PROJECT_DIR$/src/components/molecules" />
       <recent name="$PROJECT_DIR$/src/components/atoms" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/components/atoms/Container" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/icons" />
       <recent name="$PROJECT_DIR$/src/components/organisms" />
       <recent name="$PROJECT_DIR$/src/components/molecules/QuestionBuilder" />
-      <recent name="$PROJECT_DIR$/src/icons" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/organisms/Search" />
     </key>
@@ -100,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590030893238</updated>
       <workItem from="1590030895788" duration="33877000" />
-      <workItem from="1590191974693" duration="9170000" />
+      <workItem from="1590191974693" duration="18482000" />
     </task>
     <task id="LOCAL-00001" summary="chore: Add in all ReactND start files on top of CRA">
       <created>1590031371733</created>
@@ -193,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590135056828</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: Build navigation/routing, other components&#10;&#10;Feature includes question builder and group components, as well as a question component.">
+      <created>1590204160871</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1590204160871</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +223,8 @@
     <MESSAGE value="refactor: Smoothing over code" />
     <MESSAGE value="feature: 404 page" />
     <MESSAGE value="docs: Updated README" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: Updated README" />
+    <MESSAGE value="feat: Build navigation/routing, other components&#10;&#10;Feature includes question builder and group components, as well as a question component." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Build navigation/routing, other components&#10;&#10;Feature includes question builder and group components, as well as a question component." />
   </component>
   <component name="WindowStateProjectService">
     <state x="314" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590088753580">
@@ -239,10 +241,10 @@
     </state>
     <state x="1558" y="-406" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590084010480" />
     <state x="329" y="298" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1590199689711" />
-    <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2" timestamp="1590192566952">
+    <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2" timestamp="1590204160487">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1590192566952" />
+    <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1590204160487" />
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1590128330721">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -267,18 +269,19 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1590195401295" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1590135057893">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1590204162281">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1590135057892" />
-    <state x="306" y="157" width="667" height="486" key="find.popup" timestamp="1590202335901">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1590204162281" />
+    <state x="306" y="157" width="816" height="486" key="find.popup" timestamp="1590252296113">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="306" y="157" width="667" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590202335901" />
-    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup" timestamp="1590202699517">
+    <state x="306" y="157" width="816" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590252296113" />
+    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup" timestamp="1590252555093">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="1485" y="-669" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590083523423" />
-    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1590202699517" />
+    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1590252555093" />
+    <state x="243" y="193" width="795" height="256" key="search.everywhere.popup/0.23.1280.724@0.23.1280.724" timestamp="1590244436588" />
   </component>
 </project>
