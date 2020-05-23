@@ -5,7 +5,9 @@
   flex-direction: row;
   font-size: calc(1rem + 1vmin);
   justify-content: space-between;
-  padding: 1rem;
+  height: 4rem;
+  padding: 0 1rem;
+  border-bottom: solid 3px #1EB4E2;
 }
 
 .header__extras {
@@ -13,6 +15,33 @@
   align-items: center;
 }
 
+.header__username {
+  color: white;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.header__navlinks{
+  align-self: flex-end;
+}
+
+.header__navlinks-link{
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  padding: 10px 30px 5px 30px;
+  border-radius: 5px 5px 1px 1px;
+}
+
+.header__navlinks-link:hover {
+  background-color: #1EB4E2;
+}
+
 .header__extras_inbox {
+  padding: 10px 10px 0 10px;
   margin: 10px 10px 0 10px;
+}
+
+.active-link {
+  background-color: #1EB4E2;
 }

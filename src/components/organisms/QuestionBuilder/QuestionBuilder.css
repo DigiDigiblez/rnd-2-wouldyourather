@@ -1,0 +1,19 @@
+.question-builder {
+    border: solid 1px #333333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    min-height: 400px;
+}
+
+.question-builder__header {
+    border-bottom: solid 1px #333333;
+    width: 100%;
+    text-align: center;
+}
+
+.question-builder__content {
+    margin: 30px;
+}

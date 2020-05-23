@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className={baseclass}>
-      <small>Udacity React Nanodegree, Course 1, Carl Bowen</small>
+      <small>Udacity React Nanodegree, Course 2, Carl Bowen</small>
     </footer>
   );
 };

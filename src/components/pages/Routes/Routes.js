@@ -7,9 +7,16 @@ import List from "../../organisms/List";
 import Search from "../../organisms/Search";
 import Page404 from "../Page404";
 import { ROUTES } from "./route";
+import Home from "../Home";
+import NewQuestion from "../NewQuestion";
 
 const Routes = () => (
   <Switch>
+    <PublicRoute exact path={ROUTES.HOME} component={Home} />
+    <PublicRoute exact path={ROUTES.NEW_QUESTION} component={NewQuestion} />
+    <PublicRoute exact path={ROUTES.LEADER_BOARD} component={Home} />
+    <PublicRoute exact path={ROUTES.LOGOUT} component={Home} />
+    <PublicRoute exact path={ROUTES.LIST} component={List} />
     <PublicRoute exact path={ROUTES.LIST} component={List} />
     <PublicRoute exact path={ROUTES.SEARCH} component={Search} />
     <PublicRoute exact path="/404" component={Page404} />
