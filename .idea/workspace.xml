@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85fd7484-4095-4b20-aa78-d383c97d8391" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_DATA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rnd-1-myreads.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rnd-2-wouldyourather.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEARCH_TERMS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/Book/Book.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Book/Book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/List/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/List/List.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Page404/Page404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Page404/Page404.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1cCS4qnLsmIEu9zajE1845MmZyi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/icons" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components/organisms/Search" />
+      <recent name="$PROJECT_DIR$/src/components/organisms/List" />
+      <recent name="$PROJECT_DIR$/src/components/organisms" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/components/atoms/Container" />
+      <recent name="$PROJECT_DIR$/src/components/molecules/PublicRoute" />
+      <recent name="$PROJECT_DIR$/src/components/organisms/Footer" />
+      <recent name="$PROJECT_DIR$/src/components/organisms/Header" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85fd7484-4095-4b20-aa78-d383c97d8391" name="Default Changelist" comment="" />
+      <created>1590030893238</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590030893238</updated>
+      <workItem from="1590030895788" duration="33877000" />
+      <workItem from="1590191974693" duration="553000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore: Add in all ReactND start files on top of CRA">
+      <created>1590031371733</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590031371733</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: Add foundational components to project, including Chrome, Footer, and Footer. &#10;&#10;Added components to the project. Also componetised the search and the lists. Added some extra iconography. Also added router and routing to the project.">
+      <created>1590096265588</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590096265588</updated>
+    </task>
+    <task id="LOCAL-00003" summary="refactor: ESLint/Prettier + automated refactor">
+      <created>1590111560774</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590111560774</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor: Remove redundant duplicate code for List&#10;&#10;List now maps over Bookshelves and their respective Books from a local hook state. Additionally, carried out some minor housekeeping.">
+      <created>1590115260486</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590115260486</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: Retrieve books from API&#10;&#10;List now maps over Bookshelves and their respective Books from the API data rather than a local hook state.">
+      <created>1590118354613</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590118354613</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: Move books between shelves&#10;&#10;Books can now move between shelves.">
+      <created>1590121272192</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590121272192</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: PropTypes&#10;&#10;Added PropTypes for all components.">
+      <created>1590121960526</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590121960526</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: Search functionality&#10;&#10;Added search functionality, including error handling for bad searching, searches with no authors, and searches with no thumbnail (added fallback thumbnail).">
+      <created>1590128874618</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590128874618</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: Shelf info in search results&#10;&#10;The API doesn't provide shelf data for search results, and so if our shelves include the book, we will run a find of the book on our search and use that shelf in our search results.">
+      <created>1590132822972</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1590132822972</updated>
+    </task>
+    <task id="LOCAL-00010" summary="refactor: Smoothing over code">
+      <created>1590133880037</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1590133880037</updated>
+    </task>
+    <task id="LOCAL-00011" summary="docs: Updated README">
+      <created>1590134044271</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1590134044271</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feature: 404 page">
+      <created>1590134979125</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1590134979125</updated>
+    </task>
+    <task id="LOCAL-00013" summary="docs: Updated README">
+      <created>1590135056827</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1590135056828</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: Add in all ReactND start files on top of CRA" />
+    <MESSAGE value="feat: Add foundational components to project, including Chrome, Footer, and Footer. &#10;&#10;Added components to the project. Also componetised the search and the lists. Added some extra iconography. Also added router and routing to the project." />
+    <MESSAGE value="refactor: ESLint/Prettier + automated refactor" />
+    <MESSAGE value="refactor: Remove redundant duplicate code for List&#10;&#10;List now maps over Bookshelves and their respective Books from a local hook state. Additionally, carried out some minor housekeeping." />
+    <MESSAGE value="feat: Retrieve books from API&#10;&#10;List now maps over Bookshelves and their respective Books from the API data rather than a local hook state." />
+    <MESSAGE value="feat: Move books between shelves&#10;&#10;Books can now move between shelves." />
+    <MESSAGE value="feat: PropTypes&#10;&#10;Added PropTypes for all components." />
+    <MESSAGE value="feat: Search functionality&#10;&#10;Added search functionality, including error handling for bad searching, searches with no authors, and searches with no thumbnail (added fallback thumbnail)." />
+    <MESSAGE value="feat: Shelf info in search results&#10;&#10;The API doesn't provide shelf data for search results, and so if our shelves include the book, we will run a find of the book on our search and use that shelf in our search results." />
+    <MESSAGE value="refactor: Smoothing over code" />
+    <MESSAGE value="feature: 404 page" />
+    <MESSAGE value="docs: Updated README" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: Updated README" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="314" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590088753580">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="1545" y="-350" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590081245216" />
+    <state x="314" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1590088753580" />
+    <state x="428" y="112" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1590096974854">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="428" y="112" key="#com.intellij.ide.macro.MacrosDialog/0.0.1280.800@0.0.1280.800" timestamp="1590096974854" />
+    <state x="329" y="298" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590094700675">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="1558" y="-406" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590084010480" />
+    <state x="329" y="298" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1590094700675" />
+    <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2" timestamp="1590192566952">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1590192566952" />
+    <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1590128330721">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1590128330721" />
+    <state x="294" y="185" width="755" height="615" key="EditFileWatcherDialog" timestamp="1590192175343">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="294" y="185" width="755" height="615" key="EditFileWatcherDialog/0.0.1280.800@0.0.1280.800" timestamp="1590192175343" />
+    <state x="496" y="300" key="Github.ShareDialog" timestamp="1590192719733">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="496" y="300" key="Github.ShareDialog/0.0.1280.800@0.0.1280.800" timestamp="1590192719733" />
+    <state x="392" y="113" key="Github.UntrackedFilesDialog" timestamp="1590192729745">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="392" y="113" key="Github.UntrackedFilesDialog/0.0.1280.800@0.0.1280.800" timestamp="1590192729745" />
+    <state x="406" y="103" key="RollbackChangesDialog" timestamp="1590132726713">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="406" y="103" key="RollbackChangesDialog/0.0.1280.800@0.0.1280.800" timestamp="1590132726713" />
+    <state x="149" y="39" key="SettingsEditor" timestamp="1590192177292">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1590192177292" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1590135057893">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1590135057892" />
+    <state x="306" y="157" width="667" height="486" key="find.popup" timestamp="1590134689327">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="306" y="157" width="667" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590134689327" />
+    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup" timestamp="1590192160466">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="1485" y="-669" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590083523423" />
+    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1590192160466" />
+  </component>
+</project>

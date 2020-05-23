@@ -1,0 +1,33 @@
+.page404__main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.page404__main > * {
+  margin: 2rem;
+}
+
+.page404__contents {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.page404__button {
+  background-color: #ff8965;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 200px;
+}
