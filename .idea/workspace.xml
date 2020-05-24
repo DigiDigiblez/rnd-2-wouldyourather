@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85fd7484-4095-4b20-aa78-d383c97d8391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/SignInModal/SignInModal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/SignInModal/SignInModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/SignIn/SignIn.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/SignIn/SignIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/SignIn/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/authedUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/questions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/shared.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/authedUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/rootReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Routes/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Routes/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Routes/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/logo_full.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/_DATA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/SignIn/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/SignIn/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/molecules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -47,18 +52,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/redux" />
       <recent name="$PROJECT_DIR$/src/components/molecules" />
       <recent name="$PROJECT_DIR$/src/icons" />
       <recent name="$PROJECT_DIR$/src/components/pages" />
       <recent name="$PROJECT_DIR$/src/components/organisms" />
-      <recent name="$PROJECT_DIR$/src/components/atoms" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/services" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/src/icons" />
       <recent name="$PROJECT_DIR$/src/components/organisms" />
-      <recent name="$PROJECT_DIR$/src/components/molecules/QuestionBuilder" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -87,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590030893238</updated>
       <workItem from="1590030895788" duration="33877000" />
-      <workItem from="1590191974693" duration="22873000" />
+      <workItem from="1590191974693" duration="27023000" />
     </task>
     <task id="LOCAL-00001" summary="chore: Add in all ReactND start files on top of CRA">
       <created>1590031371733</created>
@@ -194,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590253204927</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: Build sign in component / page">
+      <created>1590272691214</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1590272691214</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +237,8 @@
     <MESSAGE value="docs: Updated README" />
     <MESSAGE value="feat: Build navigation/routing, other components&#10;&#10;Feature includes question builder and group components, as well as a question component." />
     <MESSAGE value="feat: Finish first draft of main UI components&#10;&#10;Question and leaderboard-related components are ready for data population." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Finish first draft of main UI components&#10;&#10;Question and leaderboard-related components are ready for data population." />
+    <MESSAGE value="feat: Build sign in component / page" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Build sign in component / page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="314" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590088753580">
@@ -242,10 +255,11 @@
     </state>
     <state x="1558" y="-406" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590084010480" />
     <state x="329" y="298" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1590199689711" />
-    <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2" timestamp="1590253204570">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="234" y="44" width="815" height="724" key="CommitChangelistDialog2" timestamp="1590272690899">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1590253204570" />
+    <state x="234" y="44" key="CommitChangelistDialog2/0.23.1280.723@0.23.1280.723" timestamp="1590272690899" />
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1590128330721">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -270,19 +284,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1590195401295" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1590253206239">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="240" y="150" key="Vcs.Push.Dialog.v2" timestamp="1590272692326">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1590253206239" />
-    <state x="306" y="157" width="816" height="486" key="find.popup" timestamp="1590252296113">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="240" y="150" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1590272692326" />
+    <state x="306" y="165" width="816" height="486" key="find.popup" timestamp="1590283882405">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="306" y="157" width="816" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590252296113" />
-    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup" timestamp="1590270614897">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="306" y="165" width="816" height="486" key="find.popup/0.23.1280.724@0.23.1280.724" timestamp="1590283882405" />
+    <state x="243" y="193" width="795" height="255" key="search.everywhere.popup" timestamp="1590281308251">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="1485" y="-669" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590083523423" />
     <state x="243" y="188" width="795" height="282" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1590270614897" />
+    <state x="243" y="193" width="795" height="255" key="search.everywhere.popup/0.23.1280.723@0.23.1280.723" timestamp="1590281308251" />
     <state x="243" y="193" width="795" height="256" key="search.everywhere.popup/0.23.1280.724@0.23.1280.724" timestamp="1590244436588" />
   </component>
 </project>
