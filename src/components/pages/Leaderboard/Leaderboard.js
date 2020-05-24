@@ -1,19 +1,45 @@
 import "./Leaderboard.css";
 
-import React from "react";
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
 import Container from "../../atoms/Container";
-import Chrome from "../../templates/Chrome";
 import Leader from "../../molecules/Leader/Leader";
+import Chrome from "../../templates/Chrome";
 
 const Leaderboard = () => {
   const baseclass = "leaderboard";
+
+  const [leaderboard] = useState(
+    useSelector(store => {
+      const userIds = Object.keys(store.users);
+
+      return userIds.map(id => ({
+        id,
+        answers: Object.keys(store.users[id].answers).length,
+        questions: Object.keys(store.users[id].questions).length,
+        points:
+          Object.keys(store.users[id].answers).length +
+          Object.keys(store.users[id].questions).length
+      }));
+    })
+  );
 
   return (
     <Container className={baseclass}>
       <Chrome>
         <section className={`${baseclass}__contents`}>
-          <Leader />
+          {leaderboard
+            .sort((a, b) => b.points - a.points)
+            .map((leader, i) => (
+              <Leader
+                id={leader.id}
+                placement={i + 1}
+                answers={leader.points}
+                questions={leader.points}
+                points={leader.points}
+              />
+            ))}
         </section>
       </Chrome>
     </Container>

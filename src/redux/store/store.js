@@ -1,9 +1,9 @@
-import { applyMiddleware, createStore } from "redux";
-import { composeWithDevTools } from "redux-devtools-extension";
+import { applyMiddleware, compose, createStore } from "redux";
+import { logger } from "redux-logger";
 import { persistReducer, persistStore } from "redux-persist";
 import autoMergeLevel2 from "redux-persist/lib/stateReconciler/autoMergeLevel2";
 import storage from "redux-persist/lib/storage";
-import thunkMiddlware from "redux-thunk";
+import thunkMiddleware from "redux-thunk";
 
 import rootReducer from "../reducers/rootReducer";
 
@@ -17,7 +17,7 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const store = createStore(
   persistedReducer,
-  composeWithDevTools(applyMiddleware(thunkMiddlware))
+  compose(applyMiddleware(thunkMiddleware, logger))
 );
 
 export const persistor = persistStore(store);

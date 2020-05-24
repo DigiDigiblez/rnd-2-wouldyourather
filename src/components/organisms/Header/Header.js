@@ -1,12 +1,13 @@
 import "./Header.css";
 
-import React from "react";
+import React, { useState } from "react";
 
 import { NavLink, useHistory } from "react-router-dom";
 import { ReactComponent as Hamburger } from "../../../icons/hamburger.svg";
 import { ReactComponent as Inbox } from "../../../icons/inbox.svg";
 import { ReactComponent as Logo } from "../../../icons/logo_full.svg";
 import { ROUTES } from "../../pages/Routes/route";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const baseclass = "header";
@@ -15,7 +16,7 @@ const Header = () => {
 
   const currentRoute = history.location.pathname;
 
-  console.log(currentRoute);
+  const [authedUser] = useState(useSelector(store => store.authedUser));
 
   return (
     <header className={baseclass}>
@@ -42,13 +43,13 @@ const Header = () => {
         >
           Leaderboard
         </NavLink>
-        <span className={`${baseclass}__username`}>Carl Bowen</span>
+        <span className={`${baseclass}__username`}>{authedUser}</span>
         <NavLink
           to={ROUTES.SIGN_IN}
           className={`${baseclass}__navlinks-link ${currentRoute ===
             ROUTES.SIGN_IN && "active-link"}`}
         >
-          Sign In
+          {authedUser ? "Sign Out" : "Sign In"}
         </NavLink>
       </div>
 

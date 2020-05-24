@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85fd7484-4095-4b20-aa78-d383c97d8391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/authedUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/questions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/shared.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/authedUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/rootReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/questions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/_DATA.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/SignIn/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/SignIn/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/Leader/Leader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Leader/Leader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/Leader/Leader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Leader/Leader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Header/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/SignInModal/SignInModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/SignInModal/SignInModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Leaderboard/Leaderboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Leaderboard/Leaderboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Leaderboard/Leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Leaderboard/Leaderboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/questions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/questions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +25,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1cCS4qnLsmIEu9zajE1845MmZyi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -92,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590030893238</updated>
       <workItem from="1590030895788" duration="33877000" />
-      <workItem from="1590191974693" duration="27023000" />
+      <workItem from="1590191974693" duration="33593000" />
     </task>
     <task id="LOCAL-00001" summary="chore: Add in all ReactND start files on top of CRA">
       <created>1590031371733</created>
@@ -206,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590272691214</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: Configure Redux and Redux Persist">
+      <created>1590284726853</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1590284726853</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +250,8 @@
     <MESSAGE value="feat: Build navigation/routing, other components&#10;&#10;Feature includes question builder and group components, as well as a question component." />
     <MESSAGE value="feat: Finish first draft of main UI components&#10;&#10;Question and leaderboard-related components are ready for data population." />
     <MESSAGE value="feat: Build sign in component / page" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Build sign in component / page" />
+    <MESSAGE value="feat: Configure Redux and Redux Persist" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Configure Redux and Redux Persist" />
   </component>
   <component name="WindowStateProjectService">
     <state x="314" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590088753580">
@@ -255,11 +268,12 @@
     </state>
     <state x="1558" y="-406" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590084010480" />
     <state x="329" y="298" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1590199689711" />
-    <state x="234" y="44" width="815" height="724" key="CommitChangelistDialog2" timestamp="1590272690899">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2" timestamp="1590284726532">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1590253204570" />
     <state x="234" y="44" key="CommitChangelistDialog2/0.23.1280.723@0.23.1280.723" timestamp="1590272690899" />
+    <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2/0.23.1280.724@0.23.1280.724" timestamp="1590284726532" />
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1590128330721">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -284,22 +298,23 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1590195401295" />
-    <state x="240" y="150" key="Vcs.Push.Dialog.v2" timestamp="1590272692326">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="240" y="150" key="Vcs.Push.Dialog.v2" timestamp="1590284728274">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1590253206239" />
     <state x="240" y="150" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1590272692326" />
-    <state x="306" y="165" width="816" height="486" key="find.popup" timestamp="1590283882405">
+    <state x="240" y="150" key="Vcs.Push.Dialog.v2/0.23.1280.724@0.23.1280.724" timestamp="1590284728274" />
+    <state x="306" y="165" width="816" height="486" key="find.popup" timestamp="1590287910543">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="306" y="157" width="816" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590252296113" />
-    <state x="306" y="165" width="816" height="486" key="find.popup/0.23.1280.724@0.23.1280.724" timestamp="1590283882405" />
-    <state x="243" y="193" width="795" height="255" key="search.everywhere.popup" timestamp="1590281308251">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="306" y="165" width="816" height="486" key="find.popup/0.23.1280.724@0.23.1280.724" timestamp="1590287910543" />
+    <state x="243" y="193" width="795" height="256" key="search.everywhere.popup" timestamp="1590290710042">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="1485" y="-669" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590083523423" />
     <state x="243" y="188" width="795" height="282" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1590270614897" />
     <state x="243" y="193" width="795" height="255" key="search.everywhere.popup/0.23.1280.723@0.23.1280.723" timestamp="1590281308251" />
-    <state x="243" y="193" width="795" height="256" key="search.everywhere.popup/0.23.1280.724@0.23.1280.724" timestamp="1590244436588" />
+    <state x="243" y="193" width="795" height="256" key="search.everywhere.popup/0.23.1280.724@0.23.1280.724" timestamp="1590290710042" />
   </component>
 </project>

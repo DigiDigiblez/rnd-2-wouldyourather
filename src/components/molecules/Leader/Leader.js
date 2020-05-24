@@ -6,13 +6,20 @@ import Container from "../../atoms/Container";
 import Separator from "../../atoms/Separator/Separator";
 import LionelLion from "../../../icons/lionel-lion.svg";
 import TrophyHolder from "../../../icons/trophy-holder.svg";
-import Trophy from "../../../icons/1st-place.svg";
+import GoldTrophy from "../../../icons/1st-place.svg";
+import SilverTrophy from "../../../icons/2nd-place.svg";
+import BronzeTrophy from "../../../icons/3rd-place.svg";
 import ScoreHolder from "../../../icons/score-holder.svg";
 
-const Leader = () => {
+const Leader = ({ id, placement, answers, questions, points }) => {
   const baseclass = "leader";
 
   const [plansCategory, setPlansCategory] = useState("Unanswered Questions");
+  const [trophy] = useState(() => {
+    if (placement === 1) return { src: GoldTrophy, alt: "1st place!!!" };
+    if (placement === 2) return { src: SilverTrophy, alt: "2nd place!!" };
+    if (placement === 3) return { src: BronzeTrophy, alt: "3rd place!" };
+  });
 
   return (
     <Container className={baseclass}>
@@ -20,12 +27,13 @@ const Leader = () => {
         <div className={`${baseclass}__content-image`}>
           <img
             src={TrophyHolder}
-            alt="I win!"
+            alt="Prize holder"
             className={`${baseclass}__content-trophy-holder`}
           />
           <img
-            src={Trophy}
-            alt="1st Place"
+            src={trophy.src}
+            alt={trophy.alt}
+            title={trophy.alt}
             className={`${baseclass}__content-trophy`}
           />
           <img src={LionelLion} alt="Lionel Lion" width={80} height={80} />
@@ -34,15 +42,15 @@ const Leader = () => {
           <Separator direction="vertical" />
         </div>
         <div className={`${baseclass}__content-details`}>
-          <h2>Lionel Lion</h2>
+          <h2>{id}</h2>
           <div className={`${baseclass}__content-details-answered`}>
             <span>Answered questions</span>
-            <span>3</span>
+            <span>{answers}</span>
           </div>
           <Separator />
           <div className={`${baseclass}__content-details-created`}>
             <span>Created questions</span>
-            <span>2</span>
+            <span>{questions}</span>
           </div>
         </div>
         <div className={`${baseclass}__content-separator`}>
@@ -54,7 +62,9 @@ const Leader = () => {
           </section>
           <div className={`${baseclass}__content-score-val`}>
             <img src={ScoreHolder} alt="Lionel Lion" width={50} height={50} />
-            <span className={`${baseclass}__content-score-value`}>5</span>
+            <span className={`${baseclass}__content-score-value`}>
+              {points}
+            </span>
           </div>
         </div>
       </section>
