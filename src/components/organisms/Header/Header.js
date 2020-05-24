@@ -3,25 +3,47 @@ import "./Header.css";
 import React, { useState } from "react";
 
 import { NavLink, useHistory } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { ReactComponent as Hamburger } from "../../../icons/hamburger.svg";
 import { ReactComponent as Inbox } from "../../../icons/inbox.svg";
 import { ReactComponent as Logo } from "../../../icons/logo_full.svg";
 import { ROUTES } from "../../pages/Routes/route";
-import { useSelector } from "react-redux";
+import { fakeAuth } from "../../../utils/api";
+import { setAuthedUser } from "../../../redux/actions/authedUser";
 
 const Header = () => {
   const baseclass = "header";
 
   const history = useHistory();
+  const dispatch = useDispatch();
 
   const currentRoute = history.location.pathname;
 
-  const [authedUser] = useState(useSelector(store => store.authedUser));
+  const [authedUser, setIsAuthed] = useState(
+    useSelector(store => store.authedUser)
+  );
+
+  const [authedUserId] = useState(
+    useSelector(store => authedUser && store.users[authedUser].id)
+  );
+
+  const [userFirstName] = useState(
+    useSelector(
+      store => authedUser && store.users[authedUser].name.split(" ")[0]
+    )
+  );
+
+  const handleSignOut = () => {
+    fakeAuth.unauthenticate(() => {
+      setIsAuthed(true);
+      dispatch(setAuthedUser(authedUserId));
+    });
+  };
 
   return (
     <header className={baseclass}>
-      <Logo className={`${baseclass}_logo`} />
       <div className={`${baseclass}__navlinks`}>
+        <Logo className={`${baseclass}_logo`} />
         <NavLink
           to={ROUTES.HOME}
           className={`${baseclass}__navlinks-link ${currentRoute ===
@@ -29,27 +51,35 @@ const Header = () => {
         >
           Home
         </NavLink>
-        <NavLink
-          to={ROUTES.NEW_QUESTION}
-          className={`${baseclass}__navlinks-link 
+        {authedUser && (
+          <NavLink
+            to={ROUTES.NEW_QUESTION}
+            className={`${baseclass}__navlinks-link 
             ${currentRoute === ROUTES.NEW_QUESTION && "active-link"}`}
-        >
-          New question
-        </NavLink>
+          >
+            New question
+          </NavLink>
+        )}
+        {authedUser && (
+          <NavLink
+            to={ROUTES.LEADER_BOARD}
+            className={`${baseclass}__navlinks-link ${currentRoute ===
+              ROUTES.LEADER_BOARD && "active-link"}`}
+          >
+            Leaderboard
+          </NavLink>
+        )}
+        {authedUser && userFirstName && (
+          <span className={`${baseclass}__username`}>
+            Hello, {userFirstName}
+          </span>
+        )}
         <NavLink
-          to={ROUTES.LEADER_BOARD}
-          className={`${baseclass}__navlinks-link ${currentRoute ===
-            ROUTES.LEADER_BOARD && "active-link"}`}
-        >
-          Leaderboard
-        </NavLink>
-        <span className={`${baseclass}__username`}>{authedUser}</span>
-        <NavLink
-          to={ROUTES.SIGN_IN}
+          to={authedUser ? ROUTES.SIGN_OUT : ROUTES.SIGN_IN}
           className={`${baseclass}__navlinks-link ${currentRoute ===
             ROUTES.SIGN_IN && "active-link"}`}
         >
-          {authedUser ? "Sign Out" : "Sign In"}
+          {authedUser ? "Sign out" : "Sign in"}
         </NavLink>
       </div>
 

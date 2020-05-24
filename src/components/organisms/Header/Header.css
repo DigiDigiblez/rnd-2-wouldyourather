@@ -10,6 +10,10 @@
   border-bottom: solid 3px #1EB4E2;
 }
 
+.header_logo {
+  margin-right: 20px;
+}
+
 .header__extras {
   display: flex;
   align-items: center;
@@ -29,7 +33,7 @@
   color: white;
   margin: 0 10px;
   text-decoration: none;
-  padding: 10px 20px 5px 30px;
+  padding: 10px 20px 5px 20px;
   border-radius: 5px 5px 1px 1px;
 }
 

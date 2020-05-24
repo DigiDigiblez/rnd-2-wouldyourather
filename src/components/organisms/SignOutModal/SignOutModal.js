@@ -1,4 +1,4 @@
-import "./SignInModal.css";
+import "./SignOutModal.css";
 
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -9,22 +9,22 @@ import { setAuthedUser } from "../../../redux/actions/authedUser";
 import { fakeAuth } from "../../../utils/api";
 import Container from "../../atoms/Container";
 
-const SignInModal = () => {
-  const baseclass = "sign-in-modal";
+const SignOutModal = () => {
+  const baseclass = "sign-out-modal";
 
   const dispatch = useDispatch();
   const history = useHistory();
 
-  const [users] = useState(useSelector(store => store.users));
   const [authedUser] = useState(useSelector(store => store.authedUser));
-  const [isAuthed, setIsAuthed] = useState(Boolean(authedUser));
+  const [, setIsAuthed] = useState(Boolean(authedUser));
 
-  const handleSignIn = event => {
+  const handleSignOut = event => {
     const { value: id } = event.target;
 
-    fakeAuth.authenticate(() => {
-      setIsAuthed(!authedUser);
+    fakeAuth.unauthenticate(() => {
+      setIsAuthed(false);
       dispatch(setAuthedUser(id));
+      history.push("/");
     });
   };
 
@@ -32,29 +32,21 @@ const SignInModal = () => {
     <Container className={baseclass}>
       <section className={`${baseclass}__header`}>
         <h1>
-          Welcome to the{" "}
+          Finished playing{" "}
           <b>
             <u>Would You Rather</u>
           </b>{" "}
-          app!
+          for today?
         </h1>
-        <p>Please sign in to play and view content</p>
+        <p>Please sign out to protect your account when done</p>
       </section>
       <section className={`${baseclass}__content`}>
         <div className={`${baseclass}__content-image`}>
           <img src={Logo} alt="Logo" />
         </div>
         <div className={`${baseclass}__content-details`}>
-          <h2>Sign In</h2>
-          <select name="user-select" id="user-select" onChange={handleSignIn}>
-            <option disabled selected>
-              Select a user
-            </option>
-            {Object.values(users).map(user => (
-              <option value={user.id}>{user.name}</option>
-            ))}
-          </select>
-          <button onClick={() => history.push("/")} className="primary_cta">
+          <h2>Sign Out</h2>
+          <button onClick={handleSignOut} className="primary_cta">
             Continue
           </button>
         </div>
@@ -62,4 +54,4 @@ const SignInModal = () => {
     </Container>
   );
 };
-export default SignInModal;
+export default SignOutModal;

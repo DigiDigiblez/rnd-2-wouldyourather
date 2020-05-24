@@ -13,9 +13,12 @@ const Home = () => {
 
   const dispatch = useDispatch();
 
-  // Dispatch action to fill store with preset data.
+  // Starting up the application (for the first time only).
   useEffect(() => {
-    dispatch(handleInitialData());
+    // Dispatch action to fill store with preset data.
+    if (!localStorage.getItem("persist:root")) {
+      dispatch(handleInitialData());
+    }
   }, []);
 
   const [unansweredQuestions] = useState(

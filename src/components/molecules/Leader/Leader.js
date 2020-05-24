@@ -10,6 +10,7 @@ import GoldTrophy from "../../../icons/1st-place.svg";
 import SilverTrophy from "../../../icons/2nd-place.svg";
 import BronzeTrophy from "../../../icons/3rd-place.svg";
 import ScoreHolder from "../../../icons/score-holder.svg";
+import { useSelector } from "react-redux";
 
 const Leader = ({ id, placement, answers, questions, points }) => {
   const baseclass = "leader";
@@ -20,6 +21,16 @@ const Leader = ({ id, placement, answers, questions, points }) => {
     if (placement === 2) return { src: SilverTrophy, alt: "2nd place!!" };
     if (placement === 3) return { src: BronzeTrophy, alt: "3rd place!" };
   });
+
+  const [userAvatars] = useState(
+    useSelector(state => {
+      return {
+        johndoe: state.users.johndoe.avatarURL,
+        sarahedo: state.users.sarahedo.avatarURL,
+        tylermcginnis: state.users.tylermcginnis.avatarURL
+      };
+    })
+  );
 
   return (
     <Container className={baseclass}>
@@ -36,7 +47,13 @@ const Leader = ({ id, placement, answers, questions, points }) => {
             title={trophy.alt}
             className={`${baseclass}__content-trophy`}
           />
-          <img src={LionelLion} alt="Lionel Lion" width={80} height={80} />
+          <img
+            src={userAvatars[id]}
+            alt={id}
+            title={id}
+            width={80}
+            height={80}
+          />
         </div>
         <div className={`${baseclass}__content-separator`}>
           <Separator direction="vertical" />

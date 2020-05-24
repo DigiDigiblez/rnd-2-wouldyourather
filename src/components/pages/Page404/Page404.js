@@ -15,7 +15,7 @@ const Page404 = () => {
       <Chrome>
         <section className={`${baseclass}__contents`}>
           404 page not found!
-          <NavLink to={ROUTES.LIST}>
+          <NavLink to={ROUTES.HOME}>
             <button className={`${baseclass}__button`}>
               Let&apos;s go home
             </button>

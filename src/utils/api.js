@@ -11,13 +11,14 @@ export function getInitialData() {
 
 export const fakeAuth = {
   isAuthenticated: false,
+
   authenticate(cb) {
     this.isAuthenticated = true;
-    setTimeout(cb, 100); // fake async
+    setTimeout(cb, 100);
   },
 
-  signout(cb) {
+  unauthenticate(cb) {
     this.isAuthenticated = false;
-    setTimeout(cb, 100); // fake async
+    setTimeout(cb, 100);
   }
 };

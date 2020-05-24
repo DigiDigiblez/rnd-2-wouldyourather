@@ -32,6 +32,16 @@ const QuestionPoll = () => {
     })
   );
 
+  const [userAvatars] = useState(
+    useSelector(state => {
+      return {
+        johndoe: state.users.johndoe.avatarURL,
+        sarahedo: state.users.sarahedo.avatarURL,
+        tylermcginnis: state.users.tylermcginnis.avatarURL
+      };
+    })
+  );
+
   const [pollAnswer, setPollAnswer] = useState(null);
 
   const handlePollSubmission = event => {
@@ -48,8 +58,8 @@ const QuestionPoll = () => {
       <section className={`${baseclass}__content`}>
         <div className={`${baseclass}__content-image`}>
           <img
-            src="https://image.flaticon.com/icons/svg/616/616412.svg"
-            alt="Lionel Lion"
+            src={userAvatars[pollData.author]}
+            alt={pollData.author}
             width={80}
             height={80}
           />
@@ -84,8 +94,8 @@ const QuestionPoll = () => {
       <section className={`${baseclass}__content`}>
         <div className={`${baseclass}__content-image`}>
           <img
-            src="https://image.flaticon.com/icons/svg/616/616412.svg"
-            alt="Lionel Lion"
+            src={userAvatars[pollData.author]}
+            alt={pollData.author}
             width={80}
             height={80}
           />
@@ -97,14 +107,24 @@ const QuestionPoll = () => {
           <h2>Results:</h2>
           <div className={`${baseclass}__content-details-poll-option`}>
             <h4>{pollData.optionOneText}</h4>
-            <PercentageBar percentage={50} />
+            <PercentageBar
+              percentage={parseInt(
+                String((pollData.optionOneVotes / pollData.totalVotes) * 100),
+                10
+              )}
+            />
             <span>
               {pollData.optionOneVotes} out of {pollData.totalVotes} votes
             </span>
           </div>
           <div className={`${baseclass}__content-details-poll-option`}>
             <h4>{pollData.optionTwoText}</h4>
-            <PercentageBar percentage={50} />
+            <PercentageBar
+              percentage={parseInt(
+                String((pollData.optionTwoVotes / pollData.totalVotes) * 100),
+                10
+              )}
+            />
             <span>
               {pollData.optionTwoVotes} out of {pollData.totalVotes} votes
             </span>
