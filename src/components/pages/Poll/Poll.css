@@ -1,4 +1,4 @@
-.home__main {
+.poll__main {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -7,23 +7,19 @@
   text-align: center;
 }
 
-.home__main > * {
+.poll__main > * {
   margin: 2rem;
 }
 
-.home__contents {
+.poll__contents {
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.home__contents-btns {
-  display: flex;
-  flex-direction: row;
-}
-
-.home__button {
+.poll__button {
   background-color: #ff8965;
   border: none;
   border-radius: 5%;
@@ -33,8 +29,4 @@
   padding: 10px;
   text-transform: uppercase;
   width: 200px;
-}
-
-.active-button {
-  background-color: #1EB4E2;
 }

@@ -11,11 +11,13 @@ import Home from "../Home";
 import NewQuestion from "../NewQuestion";
 import Leaderboard from "../Leaderboard";
 import SignIn from "../SignIn";
+import Poll from "../Poll";
 
 const Routes = () => (
   <Switch>
     <PublicRoute exact path={ROUTES.HOME} component={Home} />
     <PublicRoute exact path={ROUTES.NEW_QUESTION} component={NewQuestion} />
+    <PublicRoute exact path={ROUTES.POLL} component={Poll} />
     <PublicRoute exact path={ROUTES.LEADER_BOARD} component={Leaderboard} />
     <PublicRoute exact path={ROUTES.SIGN_IN} component={SignIn} />
     <PublicRoute exact path={ROUTES.LIST} component={List} />

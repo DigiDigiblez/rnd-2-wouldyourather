@@ -216,8 +216,11 @@ textarea {
 .secondary_cta {
     background-color: #999999;
     border: none;
+    border-radius: 10px;
+    margin: 10px 0;
     color: white;
     padding: 10px;
+    min-width: 250px;
     text-transform: uppercase;
     flex-grow: 1;
 }

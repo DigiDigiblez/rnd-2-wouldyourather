@@ -1,24 +1,29 @@
 import "./SignInModal.css";
 
-import React, { useEffect, useState } from "react";
-
-import Container from "../../atoms/Container";
-import Logo from "../../../logo.svg";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fakeAuth } from "../../../utils/api";
-import { setAuthedUser } from "../../../redux/actions/authedUser";
 import { useHistory } from "react-router";
+
+import Logo from "../../../logo.svg";
+import { setAuthedUser } from "../../../redux/actions/authedUser";
+import { fakeAuth } from "../../../utils/api";
+import Container from "../../atoms/Container";
 
 const SignInModal = () => {
   const baseclass = "sign-in-modal";
 
   const dispatch = useDispatch();
-  const [users] = useState(useSelector(state => state.users));
+  const history = useHistory();
+
+  const [users] = useState(useSelector(store => store.users));
+  const [authedUser] = useState(useSelector(store => store.authedUser));
+  const [isAuthed, setIsAuthed] = useState(Boolean(authedUser));
 
   const handleSignIn = event => {
     const { value: id } = event.target;
 
     fakeAuth.authenticate(() => {
+      setIsAuthed(!authedUser);
       dispatch(setAuthedUser(id));
     });
   };
