@@ -1,31 +1,22 @@
 import "./Header.css";
 
 import React, { useState } from "react";
-
+import { useSelector } from "react-redux";
 import { NavLink, useHistory } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+
 import { ReactComponent as Hamburger } from "../../../icons/hamburger.svg";
 import { ReactComponent as Inbox } from "../../../icons/inbox.svg";
 import { ReactComponent as Logo } from "../../../icons/logo_full.svg";
 import { ROUTES } from "../../pages/Routes/route";
-import { fakeAuth } from "../../../utils/api";
-import { setAuthedUser } from "../../../redux/actions/authedUser";
 
 const Header = () => {
   const baseclass = "header";
 
   const history = useHistory();
-  const dispatch = useDispatch();
 
   const currentRoute = history.location.pathname;
 
-  const [authedUser, setIsAuthed] = useState(
-    useSelector(store => store.authedUser)
-  );
-
-  const [authedUserId] = useState(
-    useSelector(store => authedUser && store.users[authedUser].id)
-  );
+  const [authedUser] = useState(useSelector(store => store.authedUser));
 
   const [userFirstName] = useState(
     useSelector(
@@ -34,29 +25,15 @@ const Header = () => {
   );
 
   const [userAvatars] = useState(
-    useSelector(state => {
-      if (state.users.johndoe) {
-        return {
-          johndoe: state.users.johndoe.avatarURL,
-          sarahedo: state.users.sarahedo.avatarURL,
-          tylermcginnis: state.users.tylermcginnis.avatarURL
-        };
-      }
-
+    useSelector(store => {
       return {
-        johndoe: null,
-        sarahedo: null,
-        tylermcginnis: null
+        johndoe: store.users.johndoe && store.users.johndoe.avatarURL,
+        sarahedo: store.users.sarahedo && store.users.sarahedo.avatarURL,
+        tylermcginnis:
+          store.users.tylermcginnis && store.users.tylermcginnis.avatarURL
       };
     })
   );
-
-  const handleSignOut = () => {
-    fakeAuth.unauthenticate(() => {
-      setIsAuthed(true);
-      dispatch(setAuthedUser(authedUserId));
-    });
-  };
 
   return (
     <header className={baseclass}>

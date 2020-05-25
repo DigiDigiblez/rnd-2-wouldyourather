@@ -17,13 +17,16 @@ const SignInModal = () => {
 
   const [users] = useState(useSelector(store => store.users));
   const [authedUser] = useState(useSelector(store => store.authedUser));
-  const [isAuthed, setIsAuthed] = useState(Boolean(authedUser));
+  const [, setIsAuthed] = useState(Boolean(authedUser));
+  const [hasSelectedOption, setHasSelectedOption] = useState(false);
 
   const handleSignIn = event => {
     const { value: id } = event.target;
 
+    setHasSelectedOption(true);
+
     fakeAuth.authenticate(() => {
-      setIsAuthed(!authedUser);
+      setIsAuthed(true);
       dispatch(setAuthedUser(id));
     });
   };
@@ -46,16 +49,27 @@ const SignInModal = () => {
         </div>
         <div className={`${baseclass}__content-details`}>
           <h2>Sign In</h2>
-          <select name="user-select" id="user-select" onChange={handleSignIn}>
-            <option disabled selected>
+          <select
+            name="user-select"
+            id="user-select"
+            defaultValue=""
+            onChange={handleSignIn}
+          >
+            <option value="" disabled>
               Select a user
             </option>
             {Object.values(users).map(user => (
-              <option value={user.id}>{user.name}</option>
+              <option key={user.id} value={user.id}>
+                {user.name}
+              </option>
             ))}
           </select>
-          <button onClick={() => history.push("/")} className="primary_cta">
-            Continue
+          <button
+            disabled={!hasSelectedOption}
+            onClick={() => history.push("/")}
+            className="primary_cta"
+          >
+            {!hasSelectedOption ? "Select a user to continue" : "Continue"}
           </button>
         </div>
       </section>

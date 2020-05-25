@@ -21,19 +21,12 @@ const QuestionGroup = ({
   const [plansCategory, setPlansCategory] = useState("Unanswered Questions");
 
   const [userAvatars] = useState(
-    useSelector(state => {
-      if (state.users.johndoe) {
-        return {
-          johndoe: state.users.johndoe.avatarURL,
-          sarahedo: state.users.sarahedo.avatarURL,
-          tylermcginnis: state.users.tylermcginnis.avatarURL
-        };
-      }
-
+    useSelector(store => {
       return {
-        johndoe: null,
-        sarahedo: null,
-        tylermcginnis: null
+        johndoe: store.users.johndoe && store.users.johndoe.avatarURL,
+        sarahedo: store.users.sarahedo && store.users.sarahedo.avatarURL,
+        tylermcginnis:
+          store.users.tylermcginnis && store.users.tylermcginnis.avatarURL
       };
     })
   );
