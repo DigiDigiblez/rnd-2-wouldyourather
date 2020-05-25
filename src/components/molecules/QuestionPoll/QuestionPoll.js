@@ -21,6 +21,17 @@ const QuestionPoll = () => {
     history.location.pathname.replace("/questions/", "")
   );
 
+  const [userAvatars] = useState(
+    useSelector(store => {
+      return {
+        johndoe: store.users.johndoe && store.users.johndoe.avatarURL,
+        sarahedo: store.users.sarahedo && store.users.sarahedo.avatarURL,
+        tylermcginnis:
+          store.users.tylermcginnis && store.users.tylermcginnis.avatarURL
+      };
+    })
+  );
+
   const [pollData] = useState(
     useSelector(store => {
       return {
@@ -32,16 +43,6 @@ const QuestionPoll = () => {
         totalVotes:
           store.questions[pollId].optionOne.votes.length +
           store.questions[pollId].optionTwo.votes.length
-      };
-    })
-  );
-
-  const [userAvatars] = useState(
-    useSelector(state => {
-      return {
-        johndoe: state.users.johndoe.avatarURL,
-        sarahedo: state.users.sarahedo.avatarURL,
-        tylermcginnis: state.users.tylermcginnis.avatarURL
       };
     })
   );
@@ -121,7 +122,10 @@ const QuestionPoll = () => {
         </div>
         <div className={`${baseclass}__content-details`}>
           <h2>Results:</h2>
-          <div className={`${baseclass}__content-details-poll-option`}>
+          <div
+            className={`${baseclass}__content-details-poll-option ${pollAnswer ===
+              "optionOne" && "selected-poll"}`}
+          >
             <h4>{pollData.optionOneText}</h4>
             <PercentageBar
               percentage={parseInt(
@@ -133,15 +137,13 @@ const QuestionPoll = () => {
               {pollData.optionOneVotes} out of {pollData.totalVotes} votes
             </span>
             {pollAnswer === "optionOne" && (
-              <img
-                src={userAvatars[pollData.author]}
-                alt={pollData.author}
-                width={80}
-                height={80}
-              />
+              <img src={userAvatars[authedUser]} alt={pollData.author} />
             )}
           </div>
-          <div className={`${baseclass}__content-details-poll-option`}>
+          <div
+            className={`${baseclass}__content-details-poll-option ${pollAnswer ===
+              "optionTwo" && "selected-poll"}`}
+          >
             <h4>{pollData.optionTwoText}</h4>
             <PercentageBar
               percentage={parseInt(
@@ -153,12 +155,7 @@ const QuestionPoll = () => {
               {pollData.optionTwoVotes} out of {pollData.totalVotes} votes
             </span>
             {pollAnswer === "optionTwo" && (
-              <img
-                src={userAvatars[pollData.author]}
-                alt={pollData.author}
-                width={80}
-                height={80}
-              />
+              <img src={userAvatars[authedUser]} alt={pollData.author} />
             )}
           </div>
         </div>

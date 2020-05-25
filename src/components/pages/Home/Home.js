@@ -10,22 +10,38 @@ import Chrome from "../../templates/Chrome";
 const Home = () => {
   const baseclass = "home";
 
+  const [authedUser] = useState(useSelector(store => store.authedUser));
+
   const [unansweredQuestions] = useState(
-    useSelector(state =>
-      Object.values(state.questions).filter(
-        question =>
-          !question.optionOne.votes.length && !question.optionTwo.votes.length
-      )
-    )
+    useSelector(state => {
+      if (authedUser) {
+        return Object.values(state.questions)
+          .filter(
+            question =>
+              !question.optionOne.votes.includes(authedUser) &&
+              !question.optionTwo.votes.includes(authedUser)
+          )
+          .reverse();
+      }
+
+      return state.questions;
+    })
   );
 
   const [answeredQuestions] = useState(
-    useSelector(state =>
-      Object.values(state.questions).filter(
-        question =>
-          question.optionOne.votes.length || question.optionTwo.votes.length
-      )
-    )
+    useSelector(state => {
+      if (authedUser) {
+        return Object.values(state.questions)
+          .filter(
+            question =>
+              question.optionOne.votes.includes(authedUser) ||
+              question.optionTwo.votes.includes(authedUser)
+          )
+          .reverse();
+      }
+
+      return state.questions;
+    })
   );
 
   return (

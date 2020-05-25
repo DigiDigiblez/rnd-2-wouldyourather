@@ -50,10 +50,13 @@
     border: solid 1px #999999;
     margin: 20px 0;
     padding: 10px;
-    background-color: rgba(8, 181, 15, 0.20);
     border-radius: 10px;
     width: 250px;
     position: relative;
+}
+
+.selected-poll {
+    background-color: rgba(8, 181, 15, 0.20);
 }
 
 .question-poll__content-details-poll-option > span {
