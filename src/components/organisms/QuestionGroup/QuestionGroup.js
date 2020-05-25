@@ -2,10 +2,10 @@ import "./QuestionGroup.css";
 
 import PropTypes from "prop-types";
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
 import Container from "../../atoms/Container";
 import Question from "../../molecules/Question/Question";
-import { useSelector } from "react-redux";
 
 const QuestionGroup = ({
   setOne: unansweredQuestions,
@@ -14,18 +14,26 @@ const QuestionGroup = ({
   const baseclass = "question-group";
 
   QuestionGroup.propTypes = {
-    setOne: PropTypes.arrayOf(PropTypes.object).isRequired,
-    setTwo: PropTypes.arrayOf(PropTypes.object).isRequired
+    setOne: PropTypes.objectOf(PropTypes.any).isRequired,
+    setTwo: PropTypes.objectOf(PropTypes.any).isRequired
   };
 
   const [plansCategory, setPlansCategory] = useState("Unanswered Questions");
 
   const [userAvatars] = useState(
     useSelector(state => {
+      if (state.users.johndoe) {
+        return {
+          johndoe: state.users.johndoe.avatarURL,
+          sarahedo: state.users.sarahedo.avatarURL,
+          tylermcginnis: state.users.tylermcginnis.avatarURL
+        };
+      }
+
       return {
-        johndoe: state.users.johndoe.avatarURL,
-        sarahedo: state.users.sarahedo.avatarURL,
-        tylermcginnis: state.users.tylermcginnis.avatarURL
+        johndoe: null,
+        sarahedo: null,
+        tylermcginnis: null
       };
     })
   );
@@ -50,12 +58,70 @@ const QuestionGroup = ({
           Answered Questions
         </button>
       </span>
-      {plansCategory === "Unanswered Questions"
+
+      {Object.values(answeredQuestions).length === 0 ? (
+        <>
+          <span>
+            Showing{" "}
+            <span className="emphasis">
+              {Object.values(unansweredQuestions).length}
+            </span>{" "}
+            of{" "}
+            <span className="emphasis">
+              {Object.values(unansweredQuestions).length}
+            </span>{" "}
+            questions
+          </span>
+          <button
+            className="primary_cta refresh"
+            onClick={
+              // eslint-disable-next-line no-restricted-globals
+              () => location.reload()
+            }
+          >
+            Refresh questions
+          </button>
+        </>
+      ) : plansCategory === "Unanswered Questions" ? (
+        <span>
+          Showing{" "}
+          <span className="emphasis">
+            {Object.values(unansweredQuestions).length}
+          </span>{" "}
+          of{" "}
+          <span className="emphasis">
+            {Object.values(unansweredQuestions).length}
+          </span>{" "}
+          unanswered questions
+        </span>
+      ) : (
+        <span>
+          Showing{" "}
+          <span className="emphasis">
+            {Object.values(answeredQuestions).length}
+          </span>{" "}
+          of{" "}
+          <span className="emphasis">
+            {Object.values(answeredQuestions).length}
+          </span>{" "}
+          answered questions
+        </span>
+      )}
+
+      {plansCategory === "Answered Questions"
         ? Object.values(unansweredQuestions).map(question => (
-            <Question data={question} avatar={userAvatars[question.author]} />
+            <Question
+              key={question.id}
+              data={question}
+              avatar={userAvatars[question.author]}
+            />
           ))
         : Object.values(answeredQuestions).map(question => (
-            <Question data={question} avatar={userAvatars[question.author]} />
+            <Question
+              key={question.id}
+              data={question}
+              avatar={userAvatars[question.author]}
+            />
           ))}
     </Container>
   );

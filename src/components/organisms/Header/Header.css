@@ -25,6 +25,10 @@
   font-size: 16px;
 }
 
+.header__username > img {
+  margin: 0 3px -3px 0;
+}
+
 .header__navlinks{
   align-self: flex-end;
 }
@@ -33,7 +37,7 @@
   color: white;
   margin: 0 10px;
   text-decoration: none;
-  padding: 10px 20px 5px 20px;
+  padding: 10px 10px 5px 10px;
   border-radius: 5px 5px 1px 1px;
 }
 
@@ -42,7 +46,6 @@
 }
 
 .header__extras_inbox {
-  padding: 10px 10px 0 10px;
   margin: 10px 10px 0 10px;
 }
 

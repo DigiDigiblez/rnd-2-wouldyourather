@@ -1,25 +1,14 @@
 import "./Home.css";
 
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
-import { handleInitialData } from "../../../redux/actions/shared";
 import Container from "../../atoms/Container";
 import QuestionGroup from "../../organisms/QuestionGroup/QuestionGroup";
 import Chrome from "../../templates/Chrome";
 
 const Home = () => {
   const baseclass = "home";
-
-  const dispatch = useDispatch();
-
-  // Starting up the application (for the first time only).
-  useEffect(() => {
-    // Dispatch action to fill store with preset data.
-    if (!localStorage.getItem("persist:root")) {
-      dispatch(handleInitialData());
-    }
-  }, []);
 
   const [unansweredQuestions] = useState(
     useSelector(

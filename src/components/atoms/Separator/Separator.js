@@ -10,8 +10,13 @@ const Separator = ({ direction, text }) => {
   const baseclass = "separator";
 
   Separator.propTypes = {
-    direction: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired
+    direction: PropTypes.string,
+    text: PropTypes.string
+  };
+
+  Separator.defaultProps = {
+    direction: "horizontal",
+    text: null
   };
 
   const classes = cls(baseclass, {

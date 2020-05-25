@@ -224,3 +224,23 @@ textarea {
     text-transform: uppercase;
     flex-grow: 1;
 }
+
+.emphasis {
+    color: #7107A4;
+    font-weight: bold;
+    opacity: 70%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.well {
+    margin: 10px 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.save-successful-well {
+    background: rgba(87, 182, 2, .75);
+}

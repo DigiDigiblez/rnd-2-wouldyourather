@@ -48,13 +48,6 @@
 				"tsx": "never"
 			}
 		],
-		"@typescript-eslint/no-unused-vars": "error",
-		"@typescript-eslint/interface-name-prefix": [
-			"error",
-			{
-				"prefixWithI": "always"
-			}
-		],
 		"react/destructuring-assignment": 0,
 		"react/jsx-props-no-spreading": 0,
 		"import/prefer-default-export": 0,

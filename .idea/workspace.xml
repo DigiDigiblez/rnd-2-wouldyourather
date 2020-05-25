@@ -2,29 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85fd7484-4095-4b20-aa78-d383c97d8391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/PrivateRoute/PrivateRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/PrivateRoute/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/SignOutModal/SignOutModal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/SignOutModal/SignOutModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/SignOut/SignOut.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/SignOut/SignOut.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/SignOut/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/Leader/Leader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Leader/Leader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/Question/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Question/Question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/QuestionPoll/QuestionPoll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/QuestionPoll/QuestionPoll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/PercentageBar/PercentageBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/PercentageBar/PercentageBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/Separator/Separator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Separator/Separator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Header/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/QuestionBuilder/QuestionBuilder.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/QuestionBuilder/QuestionBuilder.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/QuestionBuilder/QuestionBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/QuestionBuilder/QuestionBuilder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/QuestionGroup/QuestionGroup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/QuestionGroup/QuestionGroup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/QuestionGroup/QuestionGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/QuestionGroup/QuestionGroup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/SignInModal/SignInModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/SignInModal/SignInModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Page404/Page404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Page404/Page404.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Routes/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Routes/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Routes/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/SignIn/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/SignIn/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/_DATA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Leaderboard/Leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Leaderboard/Leaderboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/questions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/questions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +98,8 @@
       <option name="presentableId" value="Default" />
       <updated>1590030893238</updated>
       <workItem from="1590030895788" duration="33877000" />
-      <workItem from="1590191974693" duration="58981000" />
+      <workItem from="1590191974693" duration="61918000" />
+      <workItem from="1590366741680" duration="5479000" />
     </task>
     <task id="LOCAL-00001" summary="chore: Add in all ReactND start files on top of CRA">
       <created>1590031371733</created>
@@ -240,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590338869071</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feat: Finish signin / signout features and protect authenticated-user-only routes">
+      <created>1590363452811</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1590363452812</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +276,8 @@
     <MESSAGE value="feat: Configure Redux and Redux Persist" />
     <MESSAGE value="feat: Configure Redux for signing in and leaderboard" />
     <MESSAGE value="feat: Implement polls and improve question components" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Implement polls and improve question components" />
+    <MESSAGE value="feat: Finish signin / signout features and protect authenticated-user-only routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Finish signin / signout features and protect authenticated-user-only routes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="314" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590088753580">
@@ -292,10 +294,10 @@
     </state>
     <state x="1558" y="-406" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590084010480" />
     <state x="329" y="298" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1590199689711" />
-    <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2" timestamp="1590338868628">
+    <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2" timestamp="1590363452433">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1590338868628" />
+    <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1590363452433" />
     <state x="234" y="44" key="CommitChangelistDialog2/0.23.1280.723@0.23.1280.723" timestamp="1590272690899" />
     <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2/0.23.1280.724@0.23.1280.724" timestamp="1590291756875" />
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1590128330721">
@@ -322,10 +324,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1590195401295" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1590338881156">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1590363454087">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1590338881156" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1590363454087" />
     <state x="240" y="150" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1590272692326" />
     <state x="240" y="150" key="Vcs.Push.Dialog.v2/0.23.1280.724@0.23.1280.724" timestamp="1590291758582" />
     <state x="100" y="123" width="1080" height="523" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590316678450">
@@ -336,16 +338,16 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="100" y="100" width="1080" height="600" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1590335990222" />
-    <state x="306" y="157" width="816" height="486" key="find.popup" timestamp="1590363369851">
+    <state x="306" y="157" width="816" height="486" key="find.popup" timestamp="1590369897789">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="306" y="157" width="816" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590363369851" />
+    <state x="306" y="157" width="816" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590369897789" />
     <state x="306" y="165" width="816" height="486" key="find.popup/0.23.1280.724@0.23.1280.724" timestamp="1590287910543" />
-    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup" timestamp="1590362921150">
+    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup" timestamp="1590370394790">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="1485" y="-669" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590083523423" />
-    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1590362921150" />
+    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1590370394790" />
     <state x="243" y="193" width="795" height="255" key="search.everywhere.popup/0.23.1280.723@0.23.1280.723" timestamp="1590281308251" />
     <state x="243" y="193" width="795" height="256" key="search.everywhere.popup/0.23.1280.724@0.23.1280.724" timestamp="1590291816282" />
   </component>

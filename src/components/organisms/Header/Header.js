@@ -33,6 +33,24 @@ const Header = () => {
     )
   );
 
+  const [userAvatars] = useState(
+    useSelector(state => {
+      if (state.users.johndoe) {
+        return {
+          johndoe: state.users.johndoe.avatarURL,
+          sarahedo: state.users.sarahedo.avatarURL,
+          tylermcginnis: state.users.tylermcginnis.avatarURL
+        };
+      }
+
+      return {
+        johndoe: null,
+        sarahedo: null,
+        tylermcginnis: null
+      };
+    })
+  );
+
   const handleSignOut = () => {
     fakeAuth.unauthenticate(() => {
       setIsAuthed(true);
@@ -71,7 +89,14 @@ const Header = () => {
         )}
         {authedUser && userFirstName && (
           <span className={`${baseclass}__username`}>
-            Hello, {userFirstName}
+            Hello,{" "}
+            <img
+              src={userAvatars[authedUser]}
+              alt={authedUser}
+              width={20}
+              height={20}
+            />
+            {userFirstName}
           </span>
         )}
         <NavLink

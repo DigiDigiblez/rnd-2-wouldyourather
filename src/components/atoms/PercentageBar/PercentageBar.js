@@ -15,8 +15,10 @@ const PercentageBar = ({ percentage }) => {
 
   return (
     <Container className={baseclass}>
-      <Progress animated value={percentage}>
-        {percentage}%
+      {/* eslint-disable-next-line no-restricted-globals */}
+      <Progress animated value={isNaN(percentage) ? 0 : percentage}>
+        {/* eslint-disable-next-line no-restricted-globals */}
+        {isNaN(percentage) ? 0 : percentage}%
       </Progress>
     </Container>
   );

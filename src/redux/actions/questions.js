@@ -17,14 +17,13 @@ export function handleSaveQuestionAnswer(answerObj) {
   };
 }
 
-export function handleSaveQuestion(info) {
-  console.log("questionObj: ", info);
+export function handleSaveQuestion(data) {
   return dispatch => {
     dispatch(showLoading());
 
     return _saveQuestion({
-      ...info,
-      author: info.authedUser
+      ...data,
+      author: data.authedUser
     })
       .then(res => dispatch(handleInitialData(res.author)))
       .then(() => console.log("yay data!"))

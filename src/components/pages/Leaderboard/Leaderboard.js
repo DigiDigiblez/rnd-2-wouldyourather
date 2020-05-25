@@ -33,6 +33,7 @@ const Leaderboard = () => {
             .sort((a, b) => b.points - a.points)
             .map((leader, i) => (
               <Leader
+                key={leader.id}
                 id={leader.id}
                 placement={i + 1}
                 answers={leader.points}
