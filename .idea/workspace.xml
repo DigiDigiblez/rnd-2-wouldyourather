@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85fd7484-4095-4b20-aa78-d383c97d8391" name="Default Changelist" comment="fix: Resolve bug with lists">
+    <list default="true" id="85fd7484-4095-4b20-aa78-d383c97d8391" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Poll/Poll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Poll/Poll.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +86,7 @@
       <workItem from="1590030895788" duration="33877000" />
       <workItem from="1590191974693" duration="61918000" />
       <workItem from="1590366741680" duration="15255000" />
+      <workItem from="1590414534251" duration="2214000" />
     </task>
     <task id="LOCAL-00001" summary="chore: Add in all ReactND start files on top of CRA">
       <created>1590031371733</created>
@@ -254,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590384266306</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="refactor: Remove unused code (from project 1 clone)">
+      <created>1590414784893</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1590414784893</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +303,8 @@
     <MESSAGE value="fix: Resolve bug with user being unauthenticated upon reload&#10;&#10;Bug in App.js was overriding the &quot;authedUser&quot; data but not the rest of the Redux persisted data, and to make some changes and a fix for that." />
     <MESSAGE value="fix: Resolve bug with displayed unanswered and answered polls" />
     <MESSAGE value="fix: Resolve bug with lists" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: Resolve bug with lists" />
+    <MESSAGE value="refactor: Remove unused code (from project 1 clone)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: Remove unused code (from project 1 clone)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="314" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590088753580">
@@ -311,10 +321,10 @@
     </state>
     <state x="1558" y="-406" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590084010480" />
     <state x="329" y="298" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1590414574543" />
-    <state x="234" y="23" width="815" height="723" key="CommitChangelistDialog2" timestamp="1590384293016">
+    <state x="234" y="23" width="815" height="723" key="CommitChangelistDialog2" timestamp="1590414784555">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="234" y="23" width="815" height="723" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1590384293016" />
+    <state x="234" y="23" width="815" height="723" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1590414784555" />
     <state x="234" y="44" key="CommitChangelistDialog2/0.23.1280.723@0.23.1280.723" timestamp="1590272690899" />
     <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2/0.23.1280.724@0.23.1280.724" timestamp="1590291756875" />
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1590128330721">
@@ -333,18 +343,18 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="392" y="113" key="Github.UntrackedFilesDialog/0.0.1280.800@0.0.1280.800" timestamp="1590192729745" />
-    <state x="406" y="103" key="RollbackChangesDialog" timestamp="1590132726713">
+    <state x="406" y="103" key="RollbackChangesDialog" timestamp="1590416090879">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="406" y="103" key="RollbackChangesDialog/0.0.1280.800@0.0.1280.800" timestamp="1590132726713" />
+    <state x="406" y="103" key="RollbackChangesDialog/0.0.1280.800@0.0.1280.800" timestamp="1590416090879" />
     <state x="149" y="39" key="SettingsEditor" timestamp="1590195401295">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1590195401295" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1590384267771">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1590414786513">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1590384267771" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1590414786513" />
     <state x="240" y="150" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1590272692326" />
     <state x="240" y="150" key="Vcs.Push.Dialog.v2/0.23.1280.724@0.23.1280.724" timestamp="1590291758582" />
     <state x="100" y="123" width="1080" height="523" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590316678450">
@@ -360,11 +370,11 @@
     </state>
     <state x="306" y="157" width="816" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590384035802" />
     <state x="306" y="165" width="816" height="486" key="find.popup/0.23.1280.724@0.23.1280.724" timestamp="1590287910543" />
-    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup" timestamp="1590414592165">
+    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup" timestamp="1590416070733">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="1485" y="-669" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590083523423" />
-    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1590414592165" />
+    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1590416070733" />
     <state x="243" y="193" width="795" height="255" key="search.everywhere.popup/0.23.1280.723@0.23.1280.723" timestamp="1590281308251" />
     <state x="243" y="193" width="795" height="256" key="search.everywhere.popup/0.23.1280.724@0.23.1280.724" timestamp="1590291816282" />
   </component>
