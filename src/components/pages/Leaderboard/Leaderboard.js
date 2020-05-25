@@ -36,8 +36,8 @@ const Leaderboard = () => {
                 key={leader.id}
                 id={leader.id}
                 placement={i + 1}
-                answers={leader.points}
-                questions={leader.points}
+                answers={leader.answers}
+                questions={leader.questions}
                 points={leader.points}
               />
             ))}

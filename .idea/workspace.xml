@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85fd7484-4095-4b20-aa78-d383c97d8391" name="Default Changelist" comment="fix: Resolve bug with UI loading before data&#10;&#10;Bug fix resolves issues with loading initial data for Home component.">
+    <list default="true" id="85fd7484-4095-4b20-aa78-d383c97d8391" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/Leader/Leader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Leader/Leader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/QuestionPoll/QuestionPoll.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/QuestionPoll/QuestionPoll.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/QuestionPoll/QuestionPoll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/QuestionPoll/QuestionPoll.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/QuestionGroup/QuestionGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/QuestionGroup/QuestionGroup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/SignInModal/SignInModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/SignInModal/SignInModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Leaderboard/Leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Leaderboard/Leaderboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Page404/Page404.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Page404/Page404.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Page404/Page404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Page404/Page404.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +92,7 @@
       <updated>1590030893238</updated>
       <workItem from="1590030895788" duration="33877000" />
       <workItem from="1590191974693" duration="61918000" />
-      <workItem from="1590366741680" duration="7491000" />
+      <workItem from="1590366741680" duration="12219000" />
     </task>
     <task id="LOCAL-00001" summary="chore: Add in all ReactND start files on top of CRA">
       <created>1590031371733</created>
@@ -237,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590372723998</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fix: Resolve bug with user being unauthenticated upon reload&#10;&#10;Bug in App.js was overriding the &quot;authedUser&quot; data but not the rest of the Redux persisted data, and to make some changes and a fix for that.">
+      <created>1590375089199</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1590375089199</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +285,8 @@
     <MESSAGE value="feat: Implement polls and improve question components" />
     <MESSAGE value="feat: Finish signin / signout features and protect authenticated-user-only routes" />
     <MESSAGE value="fix: Resolve bug with UI loading before data&#10;&#10;Bug fix resolves issues with loading initial data for Home component." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: Resolve bug with UI loading before data&#10;&#10;Bug fix resolves issues with loading initial data for Home component." />
+    <MESSAGE value="fix: Resolve bug with user being unauthenticated upon reload&#10;&#10;Bug in App.js was overriding the &quot;authedUser&quot; data but not the rest of the Redux persisted data, and to make some changes and a fix for that." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Resolve bug with user being unauthenticated upon reload&#10;&#10;Bug in App.js was overriding the &quot;authedUser&quot; data but not the rest of the Redux persisted data, and to make some changes and a fix for that." />
   </component>
   <component name="WindowStateProjectService">
     <state x="314" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590088753580">
@@ -291,10 +303,10 @@
     </state>
     <state x="1558" y="-406" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590084010480" />
     <state x="329" y="298" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1590199689711" />
-    <state x="234" y="23" width="815" height="723" key="CommitChangelistDialog2" timestamp="1590374946559">
+    <state x="234" y="23" width="815" height="723" key="CommitChangelistDialog2" timestamp="1590375088916">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="234" y="23" width="815" height="723" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1590374946559" />
+    <state x="234" y="23" width="815" height="723" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1590375088916" />
     <state x="234" y="44" key="CommitChangelistDialog2/0.23.1280.723@0.23.1280.723" timestamp="1590272690899" />
     <state x="234" y="23" width="815" height="724" key="CommitChangelistDialog2/0.23.1280.724@0.23.1280.724" timestamp="1590291756875" />
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1590128330721">
@@ -321,10 +333,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1590195401295" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1590372725741">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1590375090358">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1590372725741" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1590375090358" />
     <state x="240" y="150" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1590272692326" />
     <state x="240" y="150" key="Vcs.Push.Dialog.v2/0.23.1280.724@0.23.1280.724" timestamp="1590291758582" />
     <state x="100" y="123" width="1080" height="523" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590316678450">
@@ -335,16 +347,16 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="100" y="100" width="1080" height="600" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1590335990222" />
-    <state x="306" y="157" width="816" height="486" key="find.popup" timestamp="1590374678966">
+    <state x="306" y="157" width="816" height="486" key="find.popup" timestamp="1590378646945">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="306" y="157" width="816" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590374678966" />
+    <state x="306" y="157" width="816" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590378646945" />
     <state x="306" y="165" width="816" height="486" key="find.popup/0.23.1280.724@0.23.1280.724" timestamp="1590287910543" />
-    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup" timestamp="1590372897948">
+    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup" timestamp="1590380800111">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="1485" y="-669" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/-640.-1080.1920.1080/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1590083523423" />
-    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1590372897948" />
+    <state x="243" y="188" width="795" height="282" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1590380800111" />
     <state x="243" y="193" width="795" height="255" key="search.everywhere.popup/0.23.1280.723@0.23.1280.723" timestamp="1590281308251" />
     <state x="243" y="193" width="795" height="256" key="search.everywhere.popup/0.23.1280.724@0.23.1280.724" timestamp="1590291816282" />
   </component>

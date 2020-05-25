@@ -20,6 +20,10 @@
   font-size: xx-large;
 }
 
+.page404__help {
+  display: block;
+}
+
 .page404__button {
   background-color: #ff8965;
   border: none;

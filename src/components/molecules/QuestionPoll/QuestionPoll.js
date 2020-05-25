@@ -3,15 +3,19 @@ import "./QuestionPoll.css";
 import React, { useState } from "react";
 
 import { useHistory } from "react-router";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Container from "../../atoms/Container";
 import Separator from "../../atoms/Separator/Separator";
 import PercentageBar from "../../atoms/PercentageBar/PercentageBar";
+import { handleSaveQuestionAnswer } from "../../../redux/actions/questions";
 
 const QuestionPoll = () => {
   const baseclass = "question-poll";
 
   const history = useHistory();
+  const dispatch = useDispatch();
+
+  const [authedUser] = useState(useSelector(store => store.authedUser));
 
   const [pollId] = useState(
     history.location.pathname.replace("/questions/", "")
@@ -44,10 +48,10 @@ const QuestionPoll = () => {
 
   const [pollAnswer, setPollAnswer] = useState(null);
 
-  const handlePollSubmission = event => {
-    const { value } = event.target;
+  const handlePollSubmission = poll => {
+    setPollAnswer(poll.answer);
 
-    setPollAnswer(value);
+    dispatch(handleSaveQuestionAnswer(poll));
   };
 
   return !pollAnswer ? (
@@ -70,14 +74,26 @@ const QuestionPoll = () => {
         <div className={`${baseclass}__content-details`}>
           <h2>Would you rather ...</h2>
           <button
-            onClick={handlePollSubmission}
+            onClick={() =>
+              handlePollSubmission({
+                answer: "optionOne",
+                authedUser,
+                qid: pollId
+              })
+            }
             value="optionOne"
             className="secondary_cta"
           >
             {pollData.optionOneText}
           </button>
           <button
-            onClick={handlePollSubmission}
+            onClick={() =>
+              handlePollSubmission({
+                answer: "optionTwo",
+                authedUser,
+                qid: pollId
+              })
+            }
             value="optionTwo"
             className="secondary_cta"
           >
@@ -116,6 +132,14 @@ const QuestionPoll = () => {
             <span>
               {pollData.optionOneVotes} out of {pollData.totalVotes} votes
             </span>
+            {pollAnswer === "optionOne" && (
+              <img
+                src={userAvatars[pollData.author]}
+                alt={pollData.author}
+                width={80}
+                height={80}
+              />
+            )}
           </div>
           <div className={`${baseclass}__content-details-poll-option`}>
             <h4>{pollData.optionTwoText}</h4>
@@ -128,6 +152,14 @@ const QuestionPoll = () => {
             <span>
               {pollData.optionTwoVotes} out of {pollData.totalVotes} votes
             </span>
+            {pollAnswer === "optionTwo" && (
+              <img
+                src={userAvatars[pollData.author]}
+                alt={pollData.author}
+                width={80}
+                height={80}
+              />
+            )}
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 import "./Home.css";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
 import Container from "../../atoms/Container";
@@ -11,23 +11,20 @@ const Home = () => {
   const baseclass = "home";
 
   const [unansweredQuestions] = useState(
-    useSelector(
-      state => state.questions,
-      state => Object.keys(state.users[state.authedUser].answers),
-      state => Object.keys(state.questions),
-      (questions, answeredQuestions, questionsId) =>
-        questionsId
-          .filter(id => !answeredQuestions.includes(id))
-          .sort((a, b) => questions[b].timestamp - questions[a].timestamp)
+    useSelector(state =>
+      Object.values(state.questions).filter(
+        question =>
+          !question.optionOne.votes.length && !question.optionTwo.votes.length
+      )
     )
   );
 
   const [answeredQuestions] = useState(
-    useSelector(
-      state => state.questions,
-      state => Object.keys(state.users[state.authedUser].answers),
-      (questions, answers) =>
-        answers.sort((a, b) => questions[b].timestamp - questions[a].timestamp)
+    useSelector(state =>
+      Object.values(state.questions).filter(
+        question =>
+          question.optionOne.votes.length || question.optionTwo.votes.length
+      )
     )
   );
 

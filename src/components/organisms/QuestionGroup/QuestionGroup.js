@@ -55,15 +55,8 @@ const QuestionGroup = ({
       {Object.values(answeredQuestions).length === 0 ? (
         <>
           <span>
-            Showing{" "}
-            <span className="emphasis">
-              {Object.values(unansweredQuestions).length}
-            </span>{" "}
-            of{" "}
-            <span className="emphasis">
-              {Object.values(unansweredQuestions).length}
-            </span>{" "}
-            questions
+            Showing <span className="emphasis">0</span> of{" "}
+            <span className="emphasis">0</span> questions
           </span>
           <button
             className="primary_cta refresh"
@@ -101,7 +94,7 @@ const QuestionGroup = ({
         </span>
       )}
 
-      {plansCategory === "Answered Questions"
+      {plansCategory === "Unanswered Questions"
         ? Object.values(unansweredQuestions).map(question => (
             <Question
               key={question.id}

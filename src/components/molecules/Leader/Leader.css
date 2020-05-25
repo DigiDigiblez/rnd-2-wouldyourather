@@ -96,10 +96,11 @@
 .leader__content-score-value {
     align-self: center;
     position: absolute;
-    left: 20px;
-    top: 11px;
     color: white;
     font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .leader__content-btns button:first-child {

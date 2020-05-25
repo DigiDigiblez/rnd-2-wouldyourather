@@ -53,11 +53,20 @@
     background-color: rgba(8, 181, 15, 0.20);
     border-radius: 10px;
     width: 250px;
+    position: relative;
 }
 
 .question-poll__content-details-poll-option > span {
     text-align: center;
     display: block;
+}
+
+.question-poll__content-details-poll-option > img {
+    height: 40px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 40px;
 }
 
 .question-poll__content-btns button:first-child {
